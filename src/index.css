@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-color{
+  background: #006491;
+}
+.form-box{
+  border-radius: 10px;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #808080;
+  box-shadow: none;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border: 2px solid #006491;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+   background-color: #006491
+   }
+   
+  [type="checkbox"]:checked+span:not(.lever):before {
+     border-right: 2px solid #006491;
+     border-bottom: 2px solid #006491;
+   }
+
+.signin-text{
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.otp-page{
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.product-image{
+  width: 100px;
+  height: 250px;
+}
+.footer{
+   background: #dbdbdb;
+  padding-bottom: 20px;
+}
+.footer-color{
+  color: #4a4a4a;
+}
+.btn-style{
+  margin-right: 10px;
+}
+
+.progresy-ul{
+  text-align: center;
+}
+.progresy-ul li{
+  display: inline-block;
+  width: 200px;
+  position: relative;
+}
+.progresy-ul li .fa{
+  background: #43A047;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 12px;
+}
+.progresy-ul li .fa::after{
+  content: '';
+  background: #ccc;
+  height: 2px;
+  width: 92px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  z-index: 1;
+}
+.progresy-ul li:nth-child(1) .fa::after,
+.progresy-ul li:nth-child(2) .fa::after{
+  background: #43A047;
+}
+.progresy-ul li:first-child .fa::after{
+  width: 105px;
+  left: 108px;
+}
+
+
+
+@media (max-width: 360px){
+  .btn{
+  letter-spacing: 0px !important;
+  }
+}
+@media (max-width: 600px){
+  .slider{
+    position: relative;
+    width: 100%;
+    height: 200px !important;
+  }
+  .slider .slides{
+    height: 200px !important;
+  }
+  .progresy-ul li{
+    display: inline-block;
+    width: 95px;
+    position: relative;
+  }
+ .progresy-ul i .fa::after{
+    content: '';
+    background: #ccc;
+    height: 2px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    z-index: 1;
+  }
+ .progresy-ul li:first-child .fa::after{
+    width: 50px;
+    left: 50px;
+  }
+  .progresy-ul li:nth-child(2) .fa::after{
+    width: 40px;
+    right: 40px;
+  }
+}
+.tabs{
+  height: 60px !important;
+}
+.tabs .tab{
+  height: 60px !important;
+}
+
+.tabs .tab a{
+  color:#006491;
+} /*Black color to the text*/
+
+.tabs .tab a:hover {
+  background-color:#eee;
+  color:#006491;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+  background-color:#d2eaf5 !important;
+  color:#006491;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+  background-color: #006491;
+} 
+
+.cart-count{
+    display: inline-block;
+    float: none;
+    margin-left: -29px;
+    line-height: 22px;
+    position: absolute;
+    top: 5px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+    color: #006491;
+}
+
+.input-field select input:focus{
+  border-bottom: 1px solid black !important;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  font-size: 16px;
+  color: #006491;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-details{
+  padding: 10px 10px;
+  background-color: grey;
+  border: none;
+  border-radius: 2px;
+  line-height: 36px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.btn-add{
+  padding: 10px 10px;
+  background-color: #1565C0;
+  border: none;
+  border-radius: 2px;
+  line-height: 36px;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.fixedElement{
+  display: block;
+    position: sticky;
+    top: 55px;
+    width: 100%;
+    z-index: 1;
+}
+
+.pay-style{
+  border: 1px solid rgb(231, 222, 222);
+  padding: 10px 20px;
+  text-align: center;
+}
